@@ -1,0 +1,6 @@
+C:\Learn\CashRegester\NunitTest\bin\Debug\NunitTest.dll
+C:\Learn\CashRegester\NunitTest\bin\Debug\NunitTest.pdb
+C:\Learn\CashRegester\NunitTest\bin\Debug\nunit.framework.dll
+C:\Learn\CashRegester\NunitTest\bin\Debug\nunit.framework.xml
+C:\Learn\CashRegester\NunitTest\obj\Debug\NunitTest.dll
+C:\Learn\CashRegester\NunitTest\obj\Debug\NunitTest.pdb
