@@ -1,10 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLogicNUnit", "SampleLogicNUnit\SampleLogicNUnit.csproj", "{AEA7341A-3D94-44CF-A9AC-4DE646E28536}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjects", "..\ConsoleApplication\BusinessObjects\BusinessObjects.csproj", "{55666266-76A7-486A-B8F5-CCDBB8CFDB53}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4D8C5FAA-DED6-4D29-8C84-9A1345B05A62}"
 	ProjectSection(SolutionItems) = preProject
 		completetests.cmd = completetests.cmd
@@ -12,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		lowtests.cmd = lowtests.cmd
 		mediumtests.cmd = mediumtests.cmd
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLogicNUnit", "SampleLogicNUnit\SampleLogicNUnit.csproj", "{AEA7341A-3D94-44CF-A9AC-4DE646E28536}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjects", "..\ConsoleApplication\BusinessObjects\BusinessObjects.csproj", "{55666266-76A7-486A-B8F5-CCDBB8CFDB53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
