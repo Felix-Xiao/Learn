@@ -1,0 +1,15 @@
+{
+  "buildPlatformOverrides": [
+    {
+      "_pathToRel": "./Platform/framework/service/bps-framework-cfgservice/src/main/resources/com.honeywell.bps.cfg",
+      "_pathFromRel": "./com.honeywell.bps.cfg",
+      "_sha1": ""
+    },
+    {
+      "pathToRel": "./Platform/pom.xml",
+      "pathFromRel": "../pom.xml",
+      "sha1": "da0079d0c54e2264df6a0ad29f96c3915a7790f2"
+    }
+  ],
+  "updateBy": "X"
+}

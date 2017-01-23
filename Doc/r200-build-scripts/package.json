@@ -1,0 +1,21 @@
+{
+  "name": "build-scripts",
+  "version": "1.0.0118",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "call npm run build_web && call npm run build_platform && call npm run sharedist",
+    "build_web": "pushd 7-SourceCode\\App\\BPSAlarmCenterWeb && call npm install && call npm run build_web && popd",
+    "build_platform": "node C:\\BuildCI\\r200-build-scripts\\build-scripts.js $fixplatform && pushd 7-SourceCode\\Platform && cmd /c \"C:\\BuildCI\\apache-maven-3.3.9\\bin\\mvn.cmd clean install -DskipTests=true -P obfuscate\"",
+    "build_daq": "pushd 7-SourceCode\\Daq && cmd /c \"C:\\BuildCI\\apache-maven-3.3.9\\bin\\mvn.cmd clean install -DskipTests=true -P obfuscate\"",
+    "sharedist": "node C:\\BuildCI\\r200-build-scripts\\build-scripts.js $sharedist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "0.0.3",
+    "elementtree": "0.1.6",
+    "fs-extra": "1.0.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "ComHoneywellBpsCfg": {
+    "pathRel": "./bps-assembly-*buildVersion*/system/com/honeywell/bps/bps-framework-cfgservice/*buildVersion*/bps-framework-cfgservice-*buildVersion*.cfg",
+    "addingLines": ["cassandra.contactpoints=localhost", "redis.host=192.168.0.116"],
+    "sha1": ""
+  },
+  "updateBy": "X"
+}
