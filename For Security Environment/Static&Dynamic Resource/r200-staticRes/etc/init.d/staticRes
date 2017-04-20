@@ -1,0 +1,30 @@
+#!/bin/sh
+
+#Get the npm global path
+#npm config get prefix
+PATH=/opt/node-v6.7.0-linux-x64/bin
+PORT=8800
+JS=/home/bpsadmin/r200-deploy-scripts/server_resource.js
+BASEDIR=/home/bpsadmin/static-root
+
+#Require install forever
+# npm install forever -g
+
+case "$1" in
+    start)
+        echo "Starting Static Resource server..."
+        forever start $JS _basedir=$BASEDIR _port=$PORT _allowcors=false
+	;;
+    stop)
+        echo "Stopping Static Resource server..."
+        forever stop $JS
+	;;
+    restart)
+        echo -n "Restarting Static Resource server..."
+        forever stop $JS
+        sleep 1
+        forever start $JS _basedir=$BASEDIR _port=$PORT _allowcors=false
+        ;;
+    *)
+        ;;
+esac

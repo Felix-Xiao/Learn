@@ -1,0 +1,9 @@
+$vmsPath="D:\VHDDs"
+$vmsPrefix="BPS-R200-"
+$vms ="NginX","Platform","Cassandra","PostgreSQL","Redis","StaticResource","DynamicResource","UserManagement"
+foreach ($vm in $vms)
+{
+   $vmname=$vmsPrefix+$vm   
+   Start-VM -Name $vmname
+}
+  

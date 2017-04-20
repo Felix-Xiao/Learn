@@ -1,0 +1,22 @@
+#!/bin/sh
+#
+# Simple Redis init.d script conceived to work on Linux systems
+# as it does use of the /proc filesystem.
+
+REDISPORT=6379
+
+PIDFILE=/home/redis/redis_${REDISPORT}.pid
+
+SentinelPidFile=/home/redis/redis-sentinel.pid
+
+case "$1" in
+    start)
+        rm $PIDFILE
+	rm $SentinelPidFile
+        ;;
+    stop)
+        ;;
+    *)
+        
+        ;;
+esac

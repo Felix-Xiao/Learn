@@ -1,0 +1,7 @@
+$path='D:\Packages'
+$files=Get-ChildItem $path -Include *.xml -Recurse
+foreach($file in $files)
+{
+ Import-VM -Path $file.FullName
+}
+

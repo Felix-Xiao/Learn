@@ -1,0 +1,10 @@
+$vmsPath="D:\20170411Packages"
+$vmsPrefix="BPS-R200-"
+$vms ="NginX","Platform","Cassandra","PostgreSQL","Redis","StaticResource","DynamicResource","UserManagement"
+foreach ($vm in $vms)
+{
+   $vmname=$vmsPrefix+$vm
+   Stop-VM -Name $vmname
+   Export-VM –VMName $vmname –path $vmsPath   
+}
+  

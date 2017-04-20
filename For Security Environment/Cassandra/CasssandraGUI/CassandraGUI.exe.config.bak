@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+  </startup>
+  <appSettings>
+    <!--Contact point(s) for Cassandra. E.g. single node 192.168.0.1 or multi nodes 192.168.0.1, 192.168.0.2-->
+    <!--<add key="CassandraContactPoints" value="10.78.147.22" />-->
+    <add key="CassandraContactPoints" value="159.99.203.90" />
+    <add key="CassandraPort" value="9042" />
+    <!--<add key="CassandraConsistencyLevel" value="Quorum" />-->
+  </appSettings>
+</configuration>

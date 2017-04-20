@@ -1,0 +1,3 @@
+sudo chmod 700 del-redis-pid
+sudo update-rc.d del-redis-pid defaults
+then you need to rename the SNNredis and SNNsentinel under r<runlevel>.d to make sure the del-redis-pid is executed firstly.
